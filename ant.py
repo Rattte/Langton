@@ -38,8 +38,10 @@ def langton():
     # gives the coordinate of the ant                
                   
     count = 0
-    antcolour = LR
+    antcolour = LLRR
+    totalcount = 0
     while len(ants) > 0:
+        totalcount +=1
         #time.sleep(1)
         for ant in ants:
             
@@ -80,6 +82,8 @@ def langton():
                 count=0
             if abs(ant.xcor()) >= size/2 or abs(ant.ycor()) >= size/2:
                 ants.pop(ants.index(ant))
+            if totalcount %1000 == 0:
+                print(totalcount)
     while True:
         window.exitonclick()
     
