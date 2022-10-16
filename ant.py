@@ -15,7 +15,7 @@ def langton():
     size = 1000
     
     #bigger number = faster
-    updates = 1000
+    updates = 40000
     
     #less ants = faster
     Antcount = 1
@@ -38,9 +38,15 @@ def langton():
     LLLLR = [l,l,l,l,r] #random?
     LRLRLRLL = [l,r,l,r,l,r,l,l]  #random?
     LLRRRLRLRLLL = [l,l,r,r,r,l,r,l,r,l,l,l] 
+    RRLLRRRL = [r,r,l,l,r,r,r,l] 
+    LRLRLLLRLR = [l,r,l,r,l,l,l,r,l,r]
+    LLLLLRR = [l,l,l,l,l,r,r]
+    lrlrlrlrllr = [l,r,l,r,l,r,l,r,l,l,r]
+    LLLLLLLLLR = [l,l,l,l,l,l,l,l,l,l,l,r]
+    LLLRRRLRLRRRLRLLRLRLR = [l,l,l,r,r,r,l,r,l,r,r,r,l,l,r,l,r,l,r,l,r]
     
     #choose which rule to use
-    rule = LR   
+    rule = LLLRRRLRLRRRLRLLRLRLR   
     
     
     
