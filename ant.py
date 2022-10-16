@@ -1,11 +1,6 @@
-import enum
-from operator import index
 import random
 import turtle
-from webbrowser import get
 import time
-import io
-from PIL import Image
   
 def langton():
     R,r = "R", "R"
@@ -15,7 +10,7 @@ def langton():
     size = 1000
     
     #bigger number = faster
-    updates = 40000
+    updates = 200000
     
     #less ants = faster
     Antcount = 1
@@ -44,9 +39,10 @@ def langton():
     lrlrlrlrllr = [l,r,l,r,l,r,l,r,l,l,r]
     LLLLLLLLLR = [l,l,l,l,l,l,l,l,l,l,l,r]
     LLLRRRLRLRRRLRLLRLRLR = [l,l,l,r,r,r,l,r,l,r,r,r,l,l,r,l,r,l,r,l,r]
+    LRLLLRLRRRLRLLRLRLRRLRLR = [l,r,l,l,l,r,r,l,r,r,r,l,l,r,l,r,l,r,r,l,r,l,r,r,l,r]
     
     #choose which rule to use
-    rule = LLLRRRLRLRRRLRLLRLRLR   
+    rule = LRLLLRLRRRLRLLRLRLRRLRLR   
     
     
     
